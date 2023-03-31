@@ -1,0 +1,125 @@
+\                                                                               
+\fixlen = T
+\RowsRetrieved =                24
+\ORIGIN  = 'IPAC Infrared Science Archive (IRSA), Caltech/JPL'
+\SIMULATED_TABLE  = 'n'
+\DATETIME= '2022-09-09 04:35:43'
+\DataTag = 'ADS/IRSA.Gator#2022/0909/043543_5507'
+\DATABASE= 'PTF Lightcurve Table (ptf_lightcurves)'
+\EQUINOX = 'J2000'
+\SKYAREA = 'within 1 arcsec of  ra=238.23371 dec=+12.91208 Eq J2000 '
+\StatusFile = '/workspace/TMP_ZmsodA_5507/Gator/irsa/5507/log.5507.html'
+\SQL     = 'WHERE (no constraints) 
+\SQL     = 'SELECT (39 column names follow in next row.)'
+\ 
+\ obsmjd (days) 
+\ ___ Observation MJD plus one half of the exposure time
+\ mag_autocorr (mag) 
+\ ___ Calibrated SExtractor MAG_AUTO with relative photometric correction applied
+\ magerr_auto (mag) 
+\ ___ Calibrated SExtractor MAGERR_AUTO
+\ oid 
+\ ___ Unique object identifier
+\ ra (degrees) 
+\ ___ Object Right Ascension
+\ dec (degrees) 
+\ ___ Object Declination
+\ clon 
+\ ___ Right ascention in Sexagesimal format.
+\ clat 
+\ ___ Declination in Sexagesimal format.
+\ fid 
+\ ___ Filter identifier (1 = g; 2 = R)
+\ transient_flag 
+\ ___ Flag = 1 if epochal detections are transient and not detected in reference image
+\ astrometricrms (degrees) 
+\ ___ Root Mean Squared deviation in epochal positions relative to object RA,Dec
+\ nobs 
+\ ___ Total number of epochal detections (observation epochs) in the lightcurve
+\ ngoodobs 
+\ ___ Number of epochal detections that were not flagged or masked due to bad pixels
+\ nbestobs 
+\ ___ Number of "clean" epochal detections used to compute relative phot. corrections
+\ referencemag (mag) 
+\ ___ Object magnitude from reference image (co-add) if detected (not transient)
+\ referencemagerr (mag) 
+\ ___ Error in referenceMag
+\ medianmag (mag) 
+\ ___ Median magnitude over nobs detections
+\ bestmedianmag (mag) 
+\ ___ Same as medianMag, but using only nbestobs epochal detections
+\ meanmag (mag) 
+\ ___ Mean magnitude over nobs detections
+\ bestmeanmag (mag) 
+\ ___ Same as meanMag, but using only nbestobs epochal detections
+\ magrms (mag) 
+\ ___ Root Mean Squared deviation in nobs magnitudes
+\ bestmagrms (mag) 
+\ ___ Same as magRMS, but using only nbestobs epochal detections
+\ sid 
+\ ___ Source database ID (= procimage database ID x1000000 + SExtractor NUMBER)
+\ s_ra (degrees) 
+\ ___ R.A. of source at observation epoch (SExtractor ALPHAWIN_J2000)
+\ s_dec (degrees) 
+\ ___ Dec. of source at observation epoch (SExtractor DELTAWIN_J2000)
+\ ptffield 
+\ ___ PTF field number
+\ ccdid 
+\ ___ CCD ID
+\ hmjd (days) 
+\ ___ Helocentric MJD plus one half of the exposure time
+\ nid 
+\ ___ Night database ID
+\ mag_auto (mag) 
+\ ___ Calibrated SExtractor MAG_AUTO
+\ limitmag (mag) 
+\ ___ Limiting magnitude
+\ absphotzp (mag) 
+\ ___ Absolute photometric zeropoint
+\ fwhmsex (arcsec) 
+\ ___ SExtractor FWHM
+\ fwhm_image (pixels) 
+\ ___ SExtractor FWHM_IMAGE
+\ qaflags 
+\ ___ Source QA flags [bit flags]
+\ flags 
+\ ___ SExtractor IMAFLAGS_ISO (upper 16 bits) & FLAGS (lower 16 bits) [bit flags]
+\ photcalflag (0=No, 1=Yes) 
+\ ___ Flag indicating source is photometrically calibrated [0=NO, 1=YES]
+\ goodflag (0=No, 1=Yes) 
+\ ___ Flag indicating source is good [0=NO, 1=YES]
+\ pid 
+\ ___ Processed-image database ID
+\ dist (arcsec) 
+\ ___ Distance between the target position and each source in arcsec.
+\ angle (deg) 
+\ ___ Position Angle in degree.
+\ 
+|           obsmjd| mag_autocorr| magerr_auto|                  oid|          ra|         dec|          clon|          clat|   fid| transient_flag| astrometricrms|       nobs|   ngoodobs|   nbestobs| referencemag| referencemagerr| medianmag| bestmedianmag| meanmag| bestmeanmag|  magrms| bestmagrms|                  sid|        s_ra|       s_dec|   ptffield| ccdid|             hmjd|        nid| mag_auto| limitmag| absphotzp| fwhmsex| fwhm_image|    qaflags|      flags| photcalflag|    goodflag|        pid|           dist|       angle|
+|           double|       double|      double|                 long|      double|      double|          char|          char|  long|            int|         double|        int|        int|        int|       double|          double|    double|        double|  double|      double|  double|     double|                 long|      double|      double|        int|   int|           double|        int|   double|   double|    double|  double|     double|        int|        int|         int|         int|        int|         double|      double|
+|             days|          mag|         mag|                     |     degrees|     degrees|              |              |      |               |        degrees|           |           |           |          mag|             mag|       mag|           mag|     mag|         mag|     mag|        mag|                     |     degrees|     degrees|           |      |             days|           |      mag|      mag|       mag|  arcsec|     pixels|           |           | 0=No, 1=Yes| 0=No, 1=Yes|           |         arcsec|         deg|
+|             null|         null|        null|                 null|        null|        null|          null|          null|  null|           null|           null|       null|       null|       null|         null|            null|      null|          null|    null|        null|    null|       null|                 null|        null|        null|       null|  null|             null|       null|     null|     null|      null|    null|       null|       null|       null|        null|        null|       null|           null|        null|
+   55269.517247200        16.975        0.034        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11591322002411  238.2337640   12.9121860        3289      1   55269.519657200         372    16.964    21.253     27.906    3.050       3.112           0      131072            0            1    11591322        0.395884    35.144008 
+   55365.344537200        16.355        0.026        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11442726002871  238.2337670   12.9121820        3289      1   55365.348647200         464    16.352    21.774     27.847    2.150       2.301           0      131072            1            1    11442726        0.395884    35.144008 
+   55270.363867200        16.689        0.059        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11607289001890  238.2337790   12.9121760        3289      1   55270.366347200         373    16.656    20.739     27.844    4.050       4.247           0      131072            0            1    11607289        0.395884    35.144008 
+   55019.254487200        17.187        0.040        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11910396001634  238.2337700   12.9122040        3289      1   55019.257567200         133    17.211    20.219     27.329    2.250       2.173           0      131088            0            1    11910396        0.395884    35.144008 
+   55019.342767200        16.417        0.037        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11910407001421  238.2337680   12.9121860        3289      1   55019.345837200         133    16.424    19.959     27.266    2.250       2.311           0      131072            0            1    11910407        0.395884    35.144008 
+   55030.250837200        16.459        0.105        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11957885001494  238.2337720   12.9121890        3289      1   55030.253167200         144    17.374    21.201     27.427    1.950       2.103           0      131072            0            1    11957885        0.395884    35.144008 
+   55042.265867200        16.960        0.033        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11977790002054  238.2337830   12.9121930        3289      1   55042.267297200         156    16.956    20.799     27.473    2.350       2.583           0      131072            0            1    11977790        0.395884    35.144008 
+   55003.291527200        17.034        0.034        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        12000437003105  238.2337750   12.9121880        3289      1   55003.295497200         115    17.048    21.519     27.369    2.150       2.299           0    12714008            0            1    12000437        0.395884    35.144008 
+   55003.419777200        17.061        0.035        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        12000520002308  238.2337780   12.9121960        3289      1   55003.423737200         115    17.064    20.754     27.258    3.050       3.240           0      131072            0            1    12000520        0.395884    35.144008 
+   54979.427497200        16.784        0.029        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        12116414002746  238.2337700   12.9121920        3289      1   54979.432267200          98    16.792    21.332     27.292    2.150       2.379           0      131072            0            1    12116414        0.395884    35.144008 
+   54979.377497200        16.584        0.029        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        12116421002966  238.2337710   12.9121980        3289      1   54979.382267200          98    16.602    21.492     27.324    2.050       2.236           0      131072            0            1    12116421        0.395884    35.144008 
+   55382.232107200        16.697        0.027        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11241459002698  238.2337690   12.9121820        3289      1   55382.235327200         481    16.690    21.537     27.827    2.350       2.474           0      131072            0            1    11241459        0.395884    35.144008 
+   55382.188737200        17.318        0.029        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11241503002622  238.2337910   12.9121840        3289      1   55382.191957200         481    17.313    21.491     27.818    2.350       2.359           0      131072            0            1    11241503        0.395884    35.144008 
+   55387.305927200        16.663        0.126        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11260621002492  238.2337850   12.9121950        3289      1   55387.308817200         486    16.671    21.478     27.714    2.150       2.273           0      131072            0            1    11260621        0.395884    35.144008 
+   54979.453567200        17.204        0.031        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        12116465002482  238.2337780   12.9122010        3289      1   54979.458327200          98    17.207    21.024     27.260    2.650       2.782           0      131072            0            1    12116465        0.395884    35.144008 
+   54979.474077200        17.151        0.031        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        12116478002246  238.2337760   12.9121790        3289      1   54979.478837200          98    17.150    20.711     27.221    2.750       2.909           0      131072            0            1    12116478        0.395884    35.144008 
+   54979.261207200        16.380        0.029        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        12116522002951  238.2337770   12.9121980        3289      1   54979.265977200          98    16.390    21.482     27.330    1.950       2.192           0      131072            0            1    12116522        0.395884    35.144008 
+   55387.349567200        16.567        0.126        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11260734002502  238.2337570   12.9121790        3289      1   55387.352467200         486    16.558    21.430     27.684    2.050       2.218           0      131072            0            1    11260734        0.395884    35.144008 
+   55370.296837200        16.372        0.027        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11415789001710  238.2337650   12.9121770        3289      1   55370.300717200         469    16.375    20.706     27.837    2.050       2.132           0      131072            0            1    11415789        0.395884    35.144008 
+   55370.340127200        17.155        0.031        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11415924001677  238.2337610   12.9121850        3289      1   55370.344007200         469    17.157    20.643     27.825    2.150       2.234           0      131072            0            1    11415924        0.395884    35.144008 
+   55375.338827200        16.638        0.029        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11425199001601  238.2337650   12.9121730        3289      1   55375.342447200         474    16.639    20.581     27.776    2.450       2.604           0      131072            0            1    11425199        0.395884    35.144008 
+   55375.292867200        17.187        0.031        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11425202001787  238.2337640   12.9121900        3289      1   55375.296487200         474    17.186    20.735     27.799    2.350       2.424           0      131072            0            1    11425202        0.395884    35.144008 
+   55365.301157200        17.073        0.027        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11442584002879  238.2337670   12.9121780        3289      1   55365.305277200         464    17.070    21.736     27.859    2.150       2.242           0      131072            1            1    11442584        0.395884    35.144008 
+   55270.319977200        17.204        0.062        32892010003322  238.2337750   12.9121700   15h52m56.11s   12d54m43.81s      2               0    2.282292e-07          31          29          27        16.819            0.042     16.784         16.915   16.806       16.824    0.320       0.324        11607276001336  238.2337830   12.9121600        3289      1   55270.322447200         373    17.179    20.177     27.766    5.650       6.821           0      131072            0            1    11607276        0.395884    35.144008 

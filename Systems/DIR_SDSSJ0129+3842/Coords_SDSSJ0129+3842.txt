@@ -1,0 +1,4 @@
+Right Ascension in degrees: 22.416921029002204
+Declination in degrees: 38.70292872061897
+Right ascension in hours:minutes:seconds: 01:29:40.06
+Declination in degrees:arcminutes:arcseconds: +38:42:10.5
